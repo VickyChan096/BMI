@@ -15,29 +15,65 @@
 
 //Button樣式
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  text-align: center;
-  white-space: nowrap;
-  user-select: none;
-  border-radius: 20px;
-  background-color: blue;
-  transition: $trsSlow;
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(120%);
-  }
-}
-
-.btnPrimary {
   @include disFlex;
   width: 120px;
   height: 120px;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  border-radius: 50%;
   font-size: $fz-s * 1.5;
   font-weight: $fw-m;
-  border-radius: 50%;
+  transition: $trsFast;
+  cursor: pointer;
+}
+
+.btnPrimary {
   background-color: $c1st;
+
+  &:hover {
+    box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+  }
+
+  &:active {
+    background: #DEA821;
+  }
+}
+
+.btnNormal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  font-size: $fz-s * 2;
+  color: #86D73F;
+  border: 6px solid #86D73F;
+
+  .btnResule {
+    position: absolute;
+    top: 30px;
+    left: 126px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  div {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #424242;
+    background-color: #86D73F;
+    background-image: url(../images/icons_loop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+
 }
 
 body {

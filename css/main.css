@@ -174,27 +174,6 @@ sub {
 }
 
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  text-align: center;
-  white-space: nowrap;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  border-radius: 20px;
-  background-color: blue;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  -webkit-filter: brightness(120%);
-          filter: brightness(120%);
-}
-
-.btnPrimary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,10 +185,71 @@ sub {
           align-items: center;
   width: 120px;
   height: 120px;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 50%;
   font-size: 24px;
   font-weight: 400;
-  border-radius: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btnPrimary {
   background-color: #FFD366;
+}
+
+.btnPrimary:hover {
+  -webkit-box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+          box-shadow: 0 1px 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.btnPrimary:active {
+  background: #DEA821;
+}
+
+.btnNormal {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  font-size: 32px;
+  color: #86D73F;
+  border: 6px solid #86D73F;
+}
+
+.btnNormal .btnResule {
+  position: absolute;
+  top: 30px;
+  left: 126px;
+}
+
+.btnNormal span {
+  font-size: 14px;
+}
+
+.btnNormal div {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #424242;
+  background-color: #86D73F;
+  background-image: url(../images/icons_loop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
 }
 
 body {
@@ -327,7 +367,7 @@ main {
 @media only screen and (max-width: 768px) {
   .card {
     padding-right: 0;
-    width: 80%;
+    width: 82%;
   }
 }
 
@@ -358,12 +398,6 @@ main {
   vertical-align: text-top;
 }
 
-@media only screen and (max-width: 768px) {
-  .card__note sup {
-    margin-right: 0;
-  }
-}
-
 .card__note__result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,6 +423,12 @@ main {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  .card__note__result p {
+    font-size: 32px;
+  }
+}
+
 .card__note__result div {
   margin-right: 12px;
   width: 7px;
@@ -398,6 +438,7 @@ main {
 @media only screen and (max-width: 768px) {
   .card__note__result div {
     margin-right: 0px;
+    margin-bottom: 5px;
     width: 80vw;
     height: 5px;
   }

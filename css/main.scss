@@ -71,7 +71,7 @@ main {
 
     @include mobile {
         padding-right: 0;
-        width: 80%;
+        width: 82%;
     }
 
     &__note {
@@ -85,9 +85,6 @@ main {
             margin-right: 7px;
             font-size: 12px;
             vertical-align: text-top;
-            @include mobile{
-                margin-right: 0;
-            }
         }
 
         &__result {
@@ -99,6 +96,9 @@ main {
 
             p {
                 font-weight: $fw-m;
+                @include mobile{
+                    font-size: $fz-s * 2;
+                }
             }
         }
 
@@ -109,6 +109,7 @@ main {
 
             @include mobile {
                 margin-right: 0px;
+                margin-bottom: 5px;
                 width: 80vw;
                 height: 5px;
             }
