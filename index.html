@@ -5,15 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- toTop Icon -->
-    <script src="https://kit.fontawesome.com/41b7cdd317.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/41b7cdd317.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>本頁名稱 - 網站目錄 - 網站名稱</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 標題欄icon -->
+    <link rel="icon" href="images/BMICLogo.png" type="image/x-icon" />
+    <!-- 收藏夾icon -->
+    <link rel="shortcut icon" href="images/BMICLogo.png" type="image/x-icon" />
+    <title>BMI Calculator</title>
   </head>
   <body>
     <!-- toTop -->
     <a href="#" id="toTop"><i class="fa-solid fa-angles-up"></i></a>
-    <h1>本頁第一標題，僅此一個</h1>
+    <header>
+      <div class="header container">
+        <h1 class="header__logo">
+          <img src="images/BMICLogo.png" alt="BMI" />
+        </h1>
+        <div class="header__input">
+          <p>身高 cm</p>
+          <input type="text" placeholder="請輸入身高" />
+          <p>體重 kg</p>
+          <input type="text" placeholder="請輸入體重" />
+        </div>
+        <div class="header__btn btn btnPrimary">看結果</div>
+      </div>
+    </header>
+    <main class="main">
+      <h2>BMI 紀錄</h2>
+      <ul class="main__list">
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="normal"></div>
+              <p>理想</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="underweight"></div>
+              <p>過輕</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="overweight"></div>
+              <p>過重</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="obese1"></div>
+              <p>輕度肥胖</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="obese2"></div>
+              <p>中度肥胖</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+        <li class="card">
+          <ul class="card__note">
+            <li class="card__note__result">
+              <div class="obese3"></div>
+              <p>重度肥胖</p>
+            </li>
+            <li><sup>BMI</sup><span id="bmiResult">20.90</span></li>
+            <li><sup>weight</sup><span id="bmiWeight">70kg</span></li>
+            <li><sup>height</sup><span id="bmiHeight">180cm</span></li>
+            <li><sup id="checkTime">06-19-2017</sup></li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <footer class="footer"><img src="images/BMICLogo.png" alt="" /></footer>
+
     <!-- JS -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

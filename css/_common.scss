@@ -30,28 +30,24 @@
   }
 }
 
-// .btnPrimary {
-//   color:
-//   background-color:
-// }
+.btnPrimary {
+  @include disFlex;
+  width: 120px;
+  height: 120px;
+  font-size: $fz-s * 1.5;
+  font-weight: $fw-m;
+  border-radius: 50%;
+  background-color: $c1st;
+}
 
-// .btnSecondary{
-//   color:
-//   background-color:
-// }
+body {
+  color: #424242;
+  background-color: $c1st;
+  font-size: $fz-m;
+  font-weight: $fw-s;
+}
 
-// .btnTertiary{
-//   color:
-//   background-color:
-// }
-
-// body {
-//   color: #000;
-//   font-size:
-//   font-weight:
-// }
-
-// .container {
-//   margin: 0 auto;
-//   max-width: 1200px;
-// }
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}

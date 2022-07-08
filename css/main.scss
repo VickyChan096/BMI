@@ -1,10 +1,119 @@
 @import "variable"; //字級、顏色、速度
 @import "reset"; //Reset、初始設定
 @import "mixin"; //Flex、@media
-@import "common";//此專案通用、toTop、按鈕
+@import "common"; //此專案通用、toTop、按鈕
 
-h1{
-    padding-bottom: 2000px;
-    font-size: $fz-s * 3;
+header {
+    background-color: $c2nd;
+}
+
+.header {
+    @include disFlex($jc: space-between);
+    padding: 74px 173px;
+
+    &__input {
+        color: $c1st;
+
+        p {
+            font-size: 18px;
+        }
+
+        input {
+            margin-bottom: 23px;
+            width: 250px;
+            height: 40px;
+            border-radius: 10px;
+            border: 2px solid $c1st;
+            background-color: rgba(255, 255, 255, 0.18);
+        }
+
+        input[type="text"],
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.50);
+            font-size: $fz-m;
+        }
+    }
+}
+
+.main {
+    padding: 48px 0 74px;
     text-align: center;
+    background-color: #f5f5f5;
+
+    h2 {
+        margin-bottom: 36px;
+        font-weight: $fw-m;
+        font-size: $fz-s * 1.5;
+    }
+}
+
+.card {
+    padding-right: 5px;
+    margin: 0 auto 16px;
+    width: 624px;
+    background-color: #fff;
+
+    &__note {
+        @include disFlex($jc: space-between);
+
+        sup {
+            margin-right: 7px;
+            font-size: 12px;
+            vertical-align: text-top;
+        }
+
+        &__result {
+            @include disFlex;
+
+            p {
+                font-weight: $fw-m;
+            }
+        }
+
+        &__result div {
+            margin-right: 12px;
+            width: 7px;
+            height: 62px;
+        }
+    }
+}
+
+.normal {
+    background-color: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+}
+
+.underweight {
+    background-color: #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+
+.overweight {
+    background-color: #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+.obese1 {
+    background-color: #FF6C03;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+.obese2 {
+    background-color: #FF6C03;
+    box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+.obese3 {
+    background-color: #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
+}
+
+.footer {
+    padding: 18px 0;
+
+    img {
+        margin: 0 auto;
+        width: 55px;
+        filter: brightness(200%);
+    }
 }

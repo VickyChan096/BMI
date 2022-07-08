@@ -136,6 +136,7 @@ table {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline: 1px solid #aaa;
 }
 
 body {
@@ -193,9 +194,197 @@ sub {
           filter: brightness(120%);
 }
 
-h1 {
-  padding-bottom: 2000px;
-  font-size: 48px;
+.btnPrimary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 50%;
+  background-color: #FFD366;
+}
+
+body {
+  color: #424242;
+  background-color: #FFD366;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+header {
+  background-color: #424242;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 74px 173px;
+}
+
+.header__input {
+  color: #FFD366;
+}
+
+.header__input p {
+  font-size: 18px;
+}
+
+.header__input input {
+  margin-bottom: 23px;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid #FFD366;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.header__input input[type="text"],
+.header__input input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.header__input input[type="text"],
+.header__input input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.header__input input[type="text"],
+.header__input input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.header__input input[type="text"],
+.header__input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.main {
+  padding: 48px 0 74px;
   text-align: center;
+  background-color: #f5f5f5;
+}
+
+.main h2 {
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.card {
+  padding-right: 5px;
+  margin: 0 auto 16px;
+  width: 624px;
+  background-color: #fff;
+}
+
+.card__note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__note sup {
+  margin-right: 7px;
+  font-size: 12px;
+  vertical-align: text-top;
+}
+
+.card__note__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__note__result p {
+  font-weight: 400;
+}
+
+.card__note__result div {
+  margin-right: 12px;
+  width: 7px;
+  height: 62px;
+}
+
+.normal {
+  background-color: #86D73F;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
+}
+
+.underweight {
+  background-color: #31BAF9;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
+}
+
+.overweight {
+  background-color: #FF982D;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
+}
+
+.obese1 {
+  background-color: #FF6C03;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+.obese2 {
+  background-color: #FF6C03;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
+}
+
+.obese3 {
+  background-color: #FF1200;
+  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
+          box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
+}
+
+.footer {
+  padding: 18px 0;
+}
+
+.footer img {
+  margin: 0 auto;
+  width: 55px;
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
 }
 /*# sourceMappingURL=main.css.map */
