@@ -11,6 +11,19 @@ header {
     @include disFlex($jc: space-between);
     padding: 74px 173px;
 
+    @include pad {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    &__logo img {
+        width: 117px;
+
+        @include pad {
+            margin-bottom: 20px;
+        }
+    }
+
     &__input {
         color: $c1st;
 
@@ -35,10 +48,13 @@ header {
     }
 }
 
+main {
+    background-color: #f5f5f5;
+}
+
 .main {
     padding: 48px 0 74px;
     text-align: center;
-    background-color: #f5f5f5;
 
     h2 {
         margin-bottom: 36px;
@@ -53,17 +69,33 @@ header {
     width: 624px;
     background-color: #fff;
 
+    @include mobile {
+        padding-right: 0;
+        width: 80%;
+    }
+
     &__note {
         @include disFlex($jc: space-between);
+
+        @include mobile {
+            flex-direction: column;
+        }
 
         sup {
             margin-right: 7px;
             font-size: 12px;
             vertical-align: text-top;
+            @include mobile{
+                margin-right: 0;
+            }
         }
 
         &__result {
             @include disFlex;
+
+            @include mobile {
+                flex-direction: column;
+            }
 
             p {
                 font-weight: $fw-m;
@@ -74,6 +106,12 @@ header {
             margin-right: 12px;
             width: 7px;
             height: 62px;
+
+            @include mobile {
+                margin-right: 0px;
+                width: 80vw;
+                height: 5px;
+            }
         }
     }
 }
