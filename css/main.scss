@@ -88,15 +88,18 @@ main {
         }
 
         &__result {
-            @include disFlex;
+            @include disFlex($jc: left);
+            width: 100px;
 
             @include mobile {
                 flex-direction: column;
+                width: auto;
             }
 
             p {
                 font-weight: $fw-m;
-                @include mobile{
+
+                @include mobile {
                     font-size: $fz-s * 2;
                 }
             }
@@ -110,7 +113,7 @@ main {
             @include mobile {
                 margin-right: 0px;
                 margin-bottom: 5px;
-                width: 80vw;
+                width: 82vw;
                 height: 5px;
             }
         }

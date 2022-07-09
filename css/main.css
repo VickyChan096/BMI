@@ -443,12 +443,13 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -457,6 +458,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: auto;
   }
 }
 
@@ -480,7 +482,7 @@ main {
   .card__note__result div {
     margin-right: 0px;
     margin-bottom: 5px;
-    width: 80vw;
+    width: 82vw;
     height: 5px;
   }
 }
