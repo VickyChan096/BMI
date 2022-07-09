@@ -47,6 +47,15 @@
   padding-top: 10px;
   font-size: $fz-s * 2;
   line-height: 1;
+  background-color: $c2nd;
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &:active {
+    background: none;
+  }
 
   span {
     position: absolute;
@@ -79,26 +88,31 @@
   }
 }
 
-.btnNormal {
-  color: #86D73F;
-  border: 6px solid #86D73F;
-}
 .btnUnderweight {
   color: #31BAF9;
   border: 6px solid #31BAF9;
 }
+
+.btnNormal {
+  color: #86D73F;
+  border: 6px solid #86D73F;
+}
+
 .btnOverweight {
   color: #FF982D;
   border: 6px solid #FF982D;
 }
+
 .btnObese1 {
   color: #FF6C03;
   border: 6px solid #FF6C03;
 }
+
 .btnObese2 {
   color: #FF6C03;
   border: 6px solid #FF6C03;
 }
+
 .btnObese3 {
   color: #FF1200;
   border: 6px solid #FF1200;

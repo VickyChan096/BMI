@@ -219,6 +219,16 @@ sub {
   padding-top: 10px;
   font-size: 32px;
   line-height: 1;
+  background-color: #424242;
+}
+
+.btnResule:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btnResule:active {
+  background: none;
 }
 
 .btnResule span {
@@ -253,14 +263,14 @@ sub {
           transform: rotate(360deg);
 }
 
-.btnNormal {
-  color: #86D73F;
-  border: 6px solid #86D73F;
-}
-
 .btnUnderweight {
   color: #31BAF9;
   border: 6px solid #31BAF9;
+}
+
+.btnNormal {
+  color: #86D73F;
+  border: 6px solid #86D73F;
 }
 
 .btnOverweight {
