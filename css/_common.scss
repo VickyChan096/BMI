@@ -13,13 +13,12 @@
   border-radius: 50%;
 }
 
-//Button樣式
+//Button共用樣式
 .btn {
   @include disFlex;
   width: 120px;
   height: 120px;
-  text-align: center;
-  white-space: nowrap;
+  white-space: nowrap; //強迫文字不斷行
   user-select: none;
   border-radius: 50%;
   font-size: $fz-s * 1.5;
@@ -28,6 +27,7 @@
   cursor: pointer;
 }
 
+//Button初始狀態
 .btnPrimary {
   background-color: $c1st;
 
@@ -40,22 +40,22 @@
   }
 }
 
-.btnNormal {
+//Button結果狀態
+.btnResule {
   position: relative;
-  display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: $fz-s * 2;
-  color: #86D73F;
-  border: 6px solid #86D73F;
-
-  .btnResule {
-    position: absolute;
-    top: 30px;
-    left: 126px;
-  }
+  line-height: 1;
 
   span {
+    position: absolute;
+    top: 38px;
+    left: 126px;
+    cursor: default;
+  }
+
+  sup {
     font-size: 14px;
   }
 
@@ -67,13 +67,41 @@
     height: 30px;
     border-radius: 50%;
     border: 3px solid #424242;
-    background-color: #86D73F;
     background-image: url(../images/icons_loop.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 40%;
+    background-size: 50%;
+    transition: $trsSlow;
   }
 
+  &:hover div {
+    transform: rotate(360deg);
+  }
+}
+
+.btnNormal {
+  color: #86D73F;
+  border: 6px solid #86D73F;
+}
+.btnUnderweight {
+  color: #31BAF9;
+  border: 6px solid #31BAF9;
+}
+.btnOverweight {
+  color: #FF982D;
+  border: 6px solid #FF982D;
+}
+.btnObese1 {
+  color: #FF6C03;
+  border: 6px solid #FF6C03;
+}
+.btnObese2 {
+  color: #FF6C03;
+  border: 6px solid #FF6C03;
+}
+.btnObese3 {
+  color: #FF1200;
+  border: 6px solid #FF1200;
 }
 
 body {

@@ -136,7 +136,6 @@ table {
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  outline: 1px solid #aaa;
 }
 
 body {
@@ -185,7 +184,6 @@ sub {
           align-items: center;
   width: 120px;
   height: 120px;
-  text-align: center;
   white-space: nowrap;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -212,32 +210,29 @@ sub {
   background: #DEA821;
 }
 
-.btnNormal {
+.btnResule {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 32px;
-  color: #86D73F;
-  border: 6px solid #86D73F;
+  line-height: 1;
 }
 
-.btnNormal .btnResule {
+.btnResule span {
   position: absolute;
-  top: 30px;
+  top: 38px;
   left: 126px;
+  cursor: default;
 }
 
-.btnNormal span {
+.btnResule sup {
   font-size: 14px;
 }
 
-.btnNormal div {
+.btnResule div {
   position: absolute;
   right: 0;
   bottom: 0px;
@@ -245,11 +240,47 @@ sub {
   height: 30px;
   border-radius: 50%;
   border: 3px solid #424242;
-  background-color: #86D73F;
   background-image: url(../images/icons_loop.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 40%;
+  background-size: 50%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.btnResule:hover div {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.btnNormal {
+  color: #86D73F;
+  border: 6px solid #86D73F;
+}
+
+.btnUnderweight {
+  color: #31BAF9;
+  border: 6px solid #31BAF9;
+}
+
+.btnOverweight {
+  color: #FF982D;
+  border: 6px solid #FF982D;
+}
+
+.btnObese1 {
+  color: #FF6C03;
+  border: 6px solid #FF6C03;
+}
+
+.btnObese2 {
+  color: #FF6C03;
+  border: 6px solid #FF6C03;
+}
+
+.btnObese3 {
+  color: #FF1200;
+  border: 6px solid #FF1200;
 }
 
 body {
@@ -446,38 +477,26 @@ main {
 
 .normal {
   background-color: #86D73F;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(134, 215, 63, 0.29);
 }
 
 .underweight {
   background-color: #31BAF9;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(49, 186, 249, 0.29);
 }
 
 .overweight {
   background-color: #FF982D;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(255, 152, 45, 0.29);
 }
 
 .obese1 {
   background-color: #FF6C03;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
 }
 
 .obese2 {
   background-color: #FF6C03;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(255, 108, 3, 0.29);
 }
 
 .obese3 {
   background-color: #FF1200;
-  -webkit-box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
-          box-shadow: 2px 0 3px 0 rgba(255, 18, 0, 0.29);
 }
 
 .footer {
